@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import {
   Link,
@@ -8,9 +8,7 @@ import {
   createRoute,
   createRouter,
 } from "@tanstack/react-router";
-import Home from "./pages/Home";
 import User from "./pages/User";
-import Login from "./pages/Login";
 import "./styles.css";
 
 const rootRoute = createRootRoute({
@@ -22,9 +20,6 @@ const rootRoute = createRootRoute({
         </Link>{" "}
         <Link to="/user" className="[&.active]:font-bold">
           User
-        </Link>
-        <Link to="/login" className="[&.active]:font-bold">
-          Login
         </Link>
       </div>
       <hr />
